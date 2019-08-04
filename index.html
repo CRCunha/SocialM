@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pt-br">
+    <title>App</title>
+    <!--METAS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web, developer, design, layout, UI, UX">
+    <meta name="language" content="PT-BR">
+    <meta name="author" content="Nome">
+    <meta name="robots" ontent="noindex">
+    <meta name="googlebot" content="noindex">
+    <!--LINKS-->
+    <link rel="stylesheet" href="CSS/GERAL/GERAL.css">
+    <link rel="stylesheet" href="CSS/NORMALIZE/NORMALIZE.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/HEADER/header.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/main-info.css">
+    <script type="text/javascript" src="JS/functions.js"></script>
+    <!--FONTES-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <!--FAV ICON-->
+    <link rel="shortcut icon" href=" " />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="avatar"></div>
+            </div>
+        </nav>
+        <div class="news">
+            <div class="container">
+                <div class="title">NEWS</div>
+                <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+        <div class="main-info">
+            <div class="card" id="card">
+                <div class="info-top">
+                    <div class="info-top-dia" id="info-top-dia"></div>
+                    <div class="info-top-data" id="info-top-data"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+
+<script>
+    window.onload = function() {
+        pegarDia();
+    };
+</script>
+
+</html>

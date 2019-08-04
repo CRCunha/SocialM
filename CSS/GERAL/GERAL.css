@@ -1,0 +1,23 @@
+:root {
+    /* VARIAVEL EXEMPLO */
+    --flex: flex;
+    --center: center;
+    --flex-end: flex-end;
+    --flex-start: flex-start;
+    --space-evenly: space-evenly;
+    --space-around: space-around;
+    --space-between: space-between;
+    --wrap: wrap;
+    --nowrap: nowrap;
+    --fonte: 'Nunito', sans-serif;
+    --bc-color: rgb(246, 246, 246);
+}
+
+body {
+    background-color: var(--bc-color);
+}
+
+
+/* QUERY EXEMPLO */
+
+@media only screen and (max-width: 800px) {}
