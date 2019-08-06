@@ -11,10 +11,12 @@
     --nowrap: nowrap;
     --fonte: 'Nunito', sans-serif;
     --bc-color: rgb(246, 246, 246);
+    --font-color: #7e7e7e;
 }
 
 body {
     background-color: var(--bc-color);
+    font-family: var(--fonte);
 }
 
 

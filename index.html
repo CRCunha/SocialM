@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="CSS/NORMALIZE/NORMALIZE.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/HEADER/header.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/main-info.css">
-    <script type="text/javascript" src="JS/functions.js"></script>
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/grupo-container.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-avatar.css">
+    <script type="text/javascript" src="JS/functions.js">
+    </script>
     <!--FONTES-->
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <!--FAV ICON-->
@@ -27,7 +30,7 @@
     <header>
         <nav>
             <div class="container">
-                <div class="avatar">
+                <div class="avatar" onclick="modalAvatar()">
                 </div>
             </div>
         </nav>
@@ -46,6 +49,31 @@
             </div>
         </div>
     </header>
+    <div class="grupo-container">
+        <div class="card-grupo">
+            <div class="linha" id="linha"></div>
+            <div class="btn-container">
+                Renovação de Matricula Aberta!
+            </div>
+        </div>
+    </div>
+    <div class="modalAvatar">
+        <div class="close-container">
+            <img onclick="modalAvatarClose()" src="IMG/MODAL AVATAR/close.png">
+        </div>
+        <div class="btn-form">
+            <div class="container">
+                <div class="btn" onclick="login()">Login</div>
+                <div class="btn" onclick="register()">Register</div>
+                <div class="container-form-log">
+                    Log
+                </div>
+                <div class="container-form-reg">
+                    Reg
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script>

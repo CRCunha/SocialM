@@ -1,7 +1,0 @@
-@media only screen and (max-width: 800px) {
-    header {
-        width: 100%;
-        height: 250px;
-        background-image: linear-gradient(to right bottom, #00e7e4, #37eed3, #60f4be, #86f8a7, #acfa91);
-    }
-}
