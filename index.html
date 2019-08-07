@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/main-info.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/grupo-container.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-avatar.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/log-ger.css">
     <script type="text/javascript" src="JS/functions.js">
     </script>
     <!--FONTES-->
@@ -36,8 +37,8 @@
         </nav>
         <div class="news">
             <div class="container">
-                <div class="title">NEWS</div>
-                <div class="sub">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+                <div class="title">D-Mountain</div>
+                <div class="sub">Is the beginning of an academic creation for a final project.</div>
             </div>
         </div>
         <div class="main-info">
@@ -53,7 +54,7 @@
         <div class="card-grupo">
             <div class="linha" id="linha"></div>
             <div class="btn-container">
-                Renovação de Matricula Aberta!
+                By: Cris s2
             </div>
         </div>
     </div>
@@ -66,14 +67,31 @@
                 <div class="btn" onclick="login()">Login</div>
                 <div class="btn" onclick="register()">Register</div>
                 <div class="container-form-log">
-                    Log
-                </div>
-                <div class="container-form-reg">
-                    Reg
+                    <form action="PHP/register.php" method="post">
+                        <div class="email">
+                            <div class="icon">
+                                <img src="IMG/MODAL AVATAR/email.png" alt="email">
+                            </div>
+                            <div class="input">
+                                <input type="email" name="email" id="email">
+                            </div>
+                        </div>
+                        <div class="senha">
+                            <div class="icon">
+                                <img src="IMG/MODAL AVATAR/senha.png" alt="senha">
+                            </div>
+                            <div class="input">
+                                <input type="password" name="senha" id="senha">
+                            </div>
+                        </div>
+                        <input type="submit" name="enviar" value="Enviar">
+                    </form>
+                    <div class="container-form-reg">
+                        Reg
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </body>
 
 <script>
