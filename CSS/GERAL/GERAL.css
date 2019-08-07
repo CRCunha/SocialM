@@ -19,6 +19,12 @@ body {
     font-family: var(--fonte);
 }
 
+@media only screen and (min-width: 1000px) {
+    body {
+        display: none;
+    }
+}
+
 
 /* QUERY EXEMPLO */
 
