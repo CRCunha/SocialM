@@ -89,3 +89,94 @@
     background-color: #3f3f3f;
     color: var(--bc-color);
 }
+
+.modalAvatar .container-form-reg form {
+    width: 95%;
+    height: 95%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--wrap);
+}
+
+.modalAvatar .container-form-reg form .email {
+    width: 100%;
+    height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--nowrap);
+}
+
+.modalAvatar .container-form-reg form .email .icon {
+    width: 50px;
+    height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-end);
+}
+
+.modalAvatar .container-form-reg form .email .icon img {
+    width: 50%;
+}
+
+.modalAvatar .container-form-reg form .email .input {
+    width: 75%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.modalAvatar .container-form-reg form .email .input input {
+    width: 95%;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.modalAvatar .container-form-reg form .senha {
+    width: 100%;
+    height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    flex-wrap: var(--nowrap);
+}
+
+.modalAvatar .container-form-reg form .senha .icon {
+    width: 50px;
+    height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--flex-end);
+}
+
+.modalAvatar .container-form-reg form .senha .icon img {
+    width: 50%;
+}
+
+.modalAvatar .container-form-reg form .senha .input {
+    width: 75%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.modalAvatar .container-form-reg form .senha .input input {
+    width: 95%;
+    height: 90%;
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 1.5px rgba(0, 0, 0, 0.2);
+}
+
+.modalAvatar .container-form-reg form input[type="submit"] {
+    border: none;
+    padding: 14px 45px;
+    border-radius: 5px;
+    background-color: #3f3f3f;
+    color: var(--bc-color);
+}

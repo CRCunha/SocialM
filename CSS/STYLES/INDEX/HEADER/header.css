@@ -10,11 +10,34 @@ header nav {
     align-items: var(--center);
 }
 
+header nav .top {
+    width: 75%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+    font-size: 14pt;
+    color: var(--font-color);
+}
+
+header nav .top a {
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+header nav .top a img {
+    width: 60%;
+}
+
 header nav .container {
     width: 90%;
     height: 100%;
     display: var(--flex);
-    justify-content: var(--flex-end);
+    justify-content: var(--space-between);
     align-items: var(--center);
 }
 

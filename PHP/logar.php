@@ -1,5 +1,5 @@
 <?php
-    require "function.php";
+    require "funcoes.php";
     require "conecta.php"; 
      // resgata variáveis do formulário
     $email = isset($_POST['email']) ? $_POST['email'] : '';
@@ -26,5 +26,5 @@
     $_SESSION['logged_in'] = true;
     $_SESSION['id'] = $usuario['id'];
     $_SESSION['nome'] = $usuario['nome'];
-    header('Location: index.php');
+    header('Location: ../index.php');
 ?>
