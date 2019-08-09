@@ -17,7 +17,7 @@
     $stmt->execute();
     $usuario = $stmt->fetchAll(PDO::FETCH_ASSOC);
     if (count($usuario) <= 0){	
-    	header ('Location:index.php');
+    	//modal de erro
     	exit;
     }
      // pega o primeiro usuário

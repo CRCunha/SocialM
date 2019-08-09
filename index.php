@@ -67,7 +67,7 @@
             <div class="card-grupo">
                 <div class="linha" id="linha"></div>
                 <div class="btn-container">
-                    <a href="">D-Chat <img src="IMG/MAIN/chat.png" alt="chat"></a>
+                    <a <?php if (isLoggedIn()): ?> href="chat.php"<?php endif; ?>>D-Chat <img src="IMG/MAIN/chat.png" alt="chat"></a>
                 </div>
             </div>
         </div>
@@ -141,4 +141,4 @@
         };
     </script>
 
-</html>
+</html> 
