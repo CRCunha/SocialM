@@ -66,6 +66,8 @@
                 <div class="submit">
                 <?php if (isLoggedIn()): ?>
                     <input type="submit" value="Enviar" name="enviar-mensagem">
+                <?php else: ?>
+                    <div id="erro">Usuário Não Encontrado</div>
                 <?php endif; ?>
                 </div>
             </form>

@@ -24,53 +24,53 @@ function pegarDia() {
 
     switch (diaToCard) {
         case 0:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
             diaCard.innerHTML = "Domingo";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
             break;
         case 1:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #9c5dc0, #b15dbc, #c55cb7, #d65db1)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
             diaCard.innerHTML = "Segunda";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #9c5dc0, #b15dbc, #c55cb7, #d65db1)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #845ec2, #9c5dc0, #b15dbc, #c55cb7, #d65db1)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
             break;
         case 2:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #d65db1, #e35fa9, #ee63a1, #f86899, #ff6f91)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
             diaCard.innerHTML = "Terça";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #d65db1, #e35fa9, #ee63a1, #f86899, #ff6f91)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #d65db1, #e35fa9, #ee63a1, #f86899, #ff6f91)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
             break;
         case 3:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #ff6f91, #ff7887, #ff817e, #ff8c76, #ff9671)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Quarta";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #ff6f91, #ff7887, #ff817e, #ff8c76, #ff9671)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #ff6f91, #ff7887, #ff817e, #ff8c76, #ff9671)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 4:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #ff9671, #ffa16b, #ffad65, #ffba61, #ffc75f)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
             diaCard.innerHTML = "Quinta";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #ff9671, #ffa16b, #ffad65, #ffba61, #ffc75f)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #ff9671, #ffa16b, #ffad65, #ffba61, #ffc75f)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
             break;
         case 5:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #ffc75f, #ffd361, #fedf65, #fcec6a, #f9f871)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
             diaCard.innerHTML = "Sexta";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #ffc75f, #ffd361, #fedf65, #fcec6a, #f9f871)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #ffc75f, #ffd361, #fedf65, #fcec6a, #f9f871)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
             break;
         case 6:
-            elemento.style.backgroundImage = "linear-gradient(to left top, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
             diaCard.innerHTML = "Sabado";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to left top, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
-            linhaChat.style.backgroundImage = "linear-gradient(to left top, #845ec2, #e65faa, #ff8080, #ffbb61, #f9f871)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5);";
             break;
     }
 }
