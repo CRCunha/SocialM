@@ -74,7 +74,7 @@ header .news .container .title {
     display: var(--flex);
     align-items: var(--center);
     font-size: 20pt;
-    color: #3f3f3f;
+    color: #7e7e7e;
     font-family: var(--fonte);
 }
 
@@ -83,6 +83,6 @@ header .news .container .sub {
     height: 40%;
     display: var(--flex);
     align-items: var(--center);
-    color: #3f3f3f;
+    color: #7e7e7e;
     font-family: var(--fonte);
 }

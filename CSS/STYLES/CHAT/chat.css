@@ -13,6 +13,7 @@
     flex-wrap: var(--wrap);
     background-color: #fff;
     border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.08);
 }
 
 .form-chat form .input-msg {
