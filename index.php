@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/grupo-container.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-avatar.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/log-ger.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-perfil.css">
     <script type="text/javascript" src="JS/functions.js">
     </script>
     <!--FONTES-->
@@ -40,7 +41,9 @@
                     <?php ?>
                     <?php if (isLoggedIn()): ?>
                     <div class="top">Olá
-                        <?php echo $_SESSION['nome']; ?> <a id="logout" href="PHP/deslogar.php"><img src="IMG/HEADER/NAV/deslogar.png"></a></div>
+                        <?php echo $_SESSION['nome']; ?>
+                        <a id="logout" href="PHP/deslogar.php"><img src="IMG/HEADER/NAV/deslogar.png"></a>
+                    </div>
                     <?php else: ?>
                     <div class="top"></div>
                     <?php endif; ?>
@@ -75,6 +78,7 @@
             <div class="close-container">
                 <img onclick="modalAvatarClose()" src="IMG/MODAL AVATAR/close.png">
             </div>
+            <?php if (isLoggedIn() == false): ?>
             <div class="btn-form">
                 <div class="container">
                     <div class="btn" onclick="login()">Login</div>
@@ -128,11 +132,20 @@
                                 </div>
                             </div>
                             <input type="submit" name="register" value="Enviar">
-                        </form> 
+                        </form>
                     </div>
-                    
+
                 </div>
             </div>
+            <?php else: ?>
+            <div class="modal-perfil">
+                <div class="container">
+                    <a href="">
+                        <img src="IMG/HEADER/NAV/avatar.jpeg">
+                    </a>
+                </div>
+            </div>
+            <?php endif; ?>
     </body>
 
     <script>
@@ -141,4 +154,4 @@
         };
     </script>
 
-</html> 
+</html>
