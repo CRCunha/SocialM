@@ -11,6 +11,8 @@
     margin-top: 30px;
     display: var(--flex);
     flex-wrap: var(--wrap);
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 .form-chat form .input-msg {
@@ -51,10 +53,10 @@
 }
 
 .form-chat form .submit input[type="submit"] {
-    width: 45%;
-    height: 55%;
+    width: 50%;
+    height: 70%;
     border: none;
-    background-color: #3f3f3f;
-    border-radius: 5px;
+    background-color: #7e7e7e;
+    border-radius: 8px;
     color: var(--bc-color);
 }

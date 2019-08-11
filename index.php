@@ -140,9 +140,10 @@
             <?php else: ?>
             <div class="modal-perfil">
                 <div class="container">
-                    <a href="">
+                    <a href="perfil.php">
                         <img src="IMG/HEADER/NAV/avatar.jpeg">
                     </a>
+                    <!-- <div class="text">Perfil</div> -->
                 </div>
             </div>
             <?php endif; ?>
