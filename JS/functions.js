@@ -31,11 +31,11 @@ function pegarDia() {
             linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
             break;
         case 1:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
             diaCard.innerHTML = "Segunda";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #df6847, #c88851, #b49e71, #acac9a)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
             break;
         case 2:
             elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
@@ -117,4 +117,49 @@ function register() {
 
 function voltar() {
     window.location.href = "../index.php";
+}
+
+function modalBc() {
+
+    var el = document.querySelector("#card-background");
+    var el2 = document.querySelector("#card-nome");
+    var el3 = document.querySelector("#card-avatar");
+
+    if (el.style.display == 'none' || el.style.display == '') {
+        el.style.display = 'flex';
+        el2.style.display = 'none';
+        el3.style.display = 'none';
+    } else {
+        el.style.display = 'none';
+    }
+}
+
+function modalNm() {
+
+    var el = document.querySelector("#card-nome");
+    var el2 = document.querySelector("#card-background");
+    var el3 = document.querySelector("#card-avatar");
+
+    if (el.style.display == 'none' || el.style.display == '') {
+        el.style.display = 'flex';
+        el2.style.display = 'none';
+        el3.style.display = 'none';
+    } else {
+        el.style.display = 'none';
+    }
+}
+
+function modalAv() {
+
+    var el = document.querySelector("#card-nome");
+    var el2 = document.querySelector("#card-background");
+    var el3 = document.querySelector("#card-avatar");
+
+    if (el3.style.display == 'none' || el3.style.display == '') {
+        el.style.display = 'none';
+        el2.style.display = 'none';
+        el3.style.display = 'flex';
+    } else {
+        el3.style.display = 'none';
+    }
 }

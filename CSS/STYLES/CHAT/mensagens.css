@@ -79,6 +79,7 @@
     background-image: url("../../../IMG/CHAT/voltar.png");
     background-size: 70%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 #mensagem {

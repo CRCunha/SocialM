@@ -6,10 +6,11 @@
     justify-content: var(--center);
     align-items: var(--center);
     margin-bottom: 50px;
+    display: none;
 }
 
 .card-background .card {
-    width: 90%;
+    width: 85%;
     height: 90%;
     background-color: #fff;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.08);

@@ -48,11 +48,15 @@ header nav .container .avatar {
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
-    background-image: url("../../../../IMG/HEADER/NAV/avatar.jpeg");
-    background-position: var(--center);
-    background-size: cover;
     box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.08);
     cursor: pointer;
+    background-color: #fff;
+}
+
+header nav .container .avatar img {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
 }
 
 header .news {

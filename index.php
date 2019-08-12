@@ -32,6 +32,25 @@
     session_start();
     require "PHP/funcoes.php";
     require "PHP/conecta.php";
+    if (isLoggedIn()){
+        $nome = $_SESSION['nome'];
+        $sql = "SELECT avatar FROM users WHERE nome LIKE '$nome'";
+    
+        try {
+            $consulta = $link->prepare($sql);
+            $consulta->execute();
+            while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
+                $avatar = utf8_decode($registro['avatar']);
+            }
+        }
+        catch(PDOException $ex){
+            echo($ex->getMessage());
+        }
+    }
+    else{
+        $avatar = "https://i.imgur.com/E9Gk0e2.png";
+    }
+
 ?>
 
     <body>
@@ -48,6 +67,7 @@
                     <div class="top"></div>
                     <?php endif; ?>
                     <div class="avatar" onclick="modalAvatar()">
+                        <img src="<?=$avatar?>">
                     </div>
                 </div>
             </nav>
@@ -141,7 +161,7 @@
             <div class="modal-perfil">
                 <div class="container">
                     <a href="perfil.php">
-                        <img src="IMG/HEADER/NAV/avatar.jpeg">
+                        <img src="<?=$avatar?>">
                     </a>
                     <!-- <div class="text">Perfil</div> -->
                 </div>
