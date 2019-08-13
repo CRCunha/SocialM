@@ -13,13 +13,15 @@ if(isset($_POST['enviar-nome'])){
 		$consulta = $link->prepare($sql);
 	
 		$consulta->execute();
-		session_destroy();
 
-		header("Location:../index.php");
+		$_SESSION['nome'] = $_POST['nome'];
+
+		header("Location:../perfil.php");
 	}
 	catch(PDOException $ex){
 		echo($ex->getMessage());
 	}
+	
 }
 ?>
 

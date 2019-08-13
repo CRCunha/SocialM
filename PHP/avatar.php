@@ -8,7 +8,7 @@ $nome = $_SESSION['nome'];
 
 if(isset($_POST['enviar-avatar'])){
 	$background = $_POST['background'];
-	$sql = "UPDATE users SET background = '$background' WHERE (nome LIKE '$nome')";
+	$sql = "UPDATE users SET avatar = '$avatar' WHERE (nome LIKE '$nome')";
 	try {
 		$consulta = $link->prepare($sql);
 	
