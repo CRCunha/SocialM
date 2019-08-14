@@ -76,7 +76,7 @@
                 <div class="nome">
                     <?php if (isLoggedIn()): ?>
                     <?php echo $_SESSION['nome']; ?>
-                    <?php else: ?> pq?!
+                    <?php else: ?>
                     <?php endif; ?>
                     <img onclick=modalNm() src="IMG/PERFIL/edit.png">
                 </div>
@@ -91,7 +91,7 @@
             <div class="card">
                 <div class="title">Change Background</div>
                 <form action="PHP/background.php" method="post">
-                    <input type="text" name="background" id="background">
+                    <input type="text" name="background" id="background" autocomplete="off">
                     <input type="submit" value="Enviar" name='enviar-background'>
                 </form>
             </div>
@@ -100,7 +100,7 @@
             <div class="card">
                 <div class="title">Change Name</div>
                 <form action="PHP/nome.php" method="post">
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="nome" id="nome" autocomplete="off">
                     <input type="submit" value="Enviar" name='enviar-nome'>
                 </form>
             </div>
@@ -109,7 +109,7 @@
             <div class="card">
                 <div class="title">Change Avatar</div>
                 <form action="PHP/avatar.php" method="post">
-                    <input type="text" name="avatar" id="avatar">
+                    <input type="text" name="avatar" id="avatar" autocomplete="off">
                     <input type="submit" value="Enviar" name='enviar-avatar'>
                 </form>
             </div>

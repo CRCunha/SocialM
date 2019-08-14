@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 14/08/2019 às 13:06
+-- Tempo de geração: 14/08/2019 às 17:38
 -- Versão do servidor: 10.3.15-MariaDB
 -- Versão do PHP: 7.3.6
 
@@ -33,6 +33,27 @@ CREATE TABLE `mensagens` (
   `nome` varchar(255) NOT NULL,
   `dataMsg` datetime NOT NULL,
   `avatar` varchar(2000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Despejando dados para a tabela `mensagens`
+--
+
+INSERT INTO `mensagens` (`mensagem`, `nome`, `dataMsg`, `avatar`) VALUES
+('Teste', 'Teste', '2019-08-14 09:46:14', '');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `posts`
+--
+
+CREATE TABLE `posts` (
+  `titulo` varchar(255) NOT NULL,
+  `info` varchar(255) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `avatar` varchar(2000) NOT NULL,
+  `imagem` varchar(2000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

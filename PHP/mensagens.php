@@ -6,9 +6,10 @@ include("conecta.php");
 if(isset($_POST['enviar-mensagem'])){
     $mensagem =  utf8_encode($_POST['mensagem']);
 	$nome = utf8_encode($_SESSION['nome']);
+	$avatar = utf8_encode($_SESSION['avatar']);
 	$data = date('Y/m/d/H:i:s');
 	
-    $sql = "INSERT INTO mensagens (mensagem, nome, dataMsg) VALUES ('$mensagem', '$nome', '$data')";
+    $sql = "INSERT INTO mensagens (mensagem, nome, dataMsg, avatar) VALUES ('$mensagem', '$nome', '$data', '$avatar')";
     
 	try {
 		$consulta = $link->prepare($sql);

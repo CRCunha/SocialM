@@ -24,25 +24,25 @@ function pegarDia() {
 
     switch (diaToCard) {
         case 0:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Domingo";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 1:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Segunda";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #9164ff, #009fff, #00c7ff, #00e6ff, #88fff4)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 2:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Terça";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f06947, #e59147, #d8b25e, #cdcd85)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 3:
             elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
@@ -52,25 +52,25 @@ function pegarDia() {
             linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 4:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Quinta";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #0e7354, #498a5c, #75a167, #a0b774, #cdcd85)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 5:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Sexta";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #d8b25e, #e59147, #f06947, #f33259)";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
         case 6:
-            elemento.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
+            elemento.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             diaCard.innerHTML = "Sabado";
             dataCard.innerHTML = str_data;
-            linha.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5)";
-            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #f33259, #f14d8d, #e16cb8, #ca88d5, #b2a0e5);";
+            linha.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
+            linhaChat.style.backgroundImage = "linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab)";
             break;
     }
 }
@@ -82,6 +82,8 @@ function modalAvatar() {
     elementoBody.style.filter = "blur(20px)";
     var elementoGrupo = document.querySelector(".grupo-container");
     elementoGrupo.style.filter = "blur(20px)";
+    var elementoPosts = document.querySelector(".posts");
+    elementoPosts.style.filter = "blur(20px)";
 }
 
 function modalAvatarClose() {
@@ -91,6 +93,8 @@ function modalAvatarClose() {
     elementoBody.style.filter = "blur(0px)";
     var elementoGrupo = document.querySelector(".grupo-container");
     elementoGrupo.style.filter = "blur(0px)";
+    var elementoPosts = document.querySelector(".posts");
+    elementoPosts.style.filter = "blur(0px)";
 
     var elementoLog = document.querySelector(".container-form-log");
     var elementoReg = document.querySelector(".container-form-reg");

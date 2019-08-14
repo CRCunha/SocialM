@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-avatar.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/log-ger.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-perfil.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/post.css">
     <script type="text/javascript" src="JS/functions.js">
     </script>
     <!--FONTES-->
@@ -83,6 +84,11 @@
                         <div class="info-top-dia" id="info-top-dia"></div>
                         <div class="info-top-data" id="info-top-data"></div>
                     </div>
+                    <div class="btn-download">
+                        <div class="container">
+                            <a href="https://www.mediafire.com/file/h74ed8xptbsb6tu/_D_Mountain_9398843.apk/file" target="_blank">Downlaod .apk</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -94,6 +100,11 @@
                 </div>
             </div>
         </div>
+        <!-- POSTS -->
+        <?php 
+        include("PHP/mostrar-posts.php");
+        ?>
+        <!-- POSTS -->
         <div class="modalAvatar">
             <div class="close-container">
                 <img onclick="modalAvatarClose()" src="IMG/MODAL AVATAR/close.png">
@@ -161,9 +172,17 @@
             <div class="modal-perfil">
                 <div class="container">
                     <a style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;" href="perfil.php">
-                        
+
                     </a>
-                    <!-- <div class="text">Perfil</div> -->
+                    <div class="new-post">
+                        <div class="title">New Post</div>
+                        <form action="PHP/posts.php" method="post">
+                            <input type="text" name="titulo" id="titulo" placeholder="Titulo">
+                            <input type="text" name="info" id="info" placeholder="Descrição">
+                            <input type="text" name="imagem" id="imagem" placeholder="Imagem">
+                            <input type="submit"name="enviar-post" value="Enviar">
+                        </form>
+                    </div>
                 </div>
             </div>
             <?php endif; ?>

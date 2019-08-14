@@ -1,0 +1,96 @@
+.posts {
+    margin-bottom: 50px;
+    width: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+}
+
+.posts .post {
+    width: 85%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.08);
+}
+
+.posts .post .post-header {
+    width: 100%;
+    height: 80px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.posts .post .post-header .container {
+    width: 80%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--space-between);
+    align-items: var(--center);
+}
+
+.posts .post .post-header .container .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.08);
+}
+
+.posts .post .post-header .container .nome {
+    margin-right: 10px;
+    color: #7e7e7e;
+    width: 65%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--flex-end);
+    align-items: var(--center);
+}
+
+.posts .post .post-background {
+    width: 100%;
+    height: 180px;
+    background-color: #7e7e7e;
+}
+
+.posts .post .post-infos {
+    width: 100%;
+    background-color: #fff;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.posts .post .post-infos .title {
+    width: 100%;
+    min-height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.posts .post .post-infos .title .container {
+    width: 85%;
+    min-height: 50px;
+    color: #7e7e7e;
+    font-size: 14pt;
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+}
+
+.posts .post .post-infos .description {
+    width: 100%;
+    min-height: 50px;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.posts .post .post-infos .description .container {
+    width: 85%;
+    min-height: 50px;
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+    color: #7e7e7e;
+    padding-bottom: 30px;
+    font-size: 11pt;
+}

@@ -7,6 +7,7 @@ $sql = "select * from mensagens order by dataMsg DESC";
 		while ($registro = $consulta->fetch(PDO::FETCH_ASSOC)) {
 			$nome = utf8_decode($registro['nome']);
 			$mensagem = utf8_decode($registro['mensagem']);
+			$avatar = $registro['avatar'];
 			$data = $registro['dataMsg'];
 			echo "
             <div class='quadro'>
