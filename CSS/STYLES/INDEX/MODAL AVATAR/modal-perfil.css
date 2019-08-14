@@ -16,8 +16,8 @@
 }
 
 .modalAvatar .modal-perfil .container a {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 8px;
     display: var(--flex);
     justify-content: var(--center);

@@ -70,8 +70,7 @@
         <div class="card-infos">
             <div class="card">
                 <div class="avatar-container">
-                    <div class="avatar">
-                        <img onclick=modalAv() src="<?=$avatar?>">
+                    <div onclick=modalAv() class="avatar" style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;">
                     </div>
                 </div>
                 <div class="nome">
@@ -110,7 +109,7 @@
             <div class="card">
                 <div class="title">Change Avatar</div>
                 <form action="PHP/avatar.php" method="post">
-                    <input type="text" name="nome" id="nome">
+                    <input type="text" name="avatar" id="avatar">
                     <input type="submit" value="Enviar" name='enviar-avatar'>
                 </form>
             </div>

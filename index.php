@@ -66,8 +66,8 @@
                     <?php else: ?>
                     <div class="top"></div>
                     <?php endif; ?>
-                    <div class="avatar" onclick="modalAvatar()">
-                        <img src="<?=$avatar?>">
+                    <div class="avatar" style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;" onclick="modalAvatar()">
+
                     </div>
                 </div>
             </nav>
@@ -160,8 +160,8 @@
             <?php else: ?>
             <div class="modal-perfil">
                 <div class="container">
-                    <a href="perfil.php">
-                        <img src="<?=$avatar?>">
+                    <a style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;" href="perfil.php">
+                        
                     </a>
                     <!-- <div class="text">Perfil</div> -->
                 </div>

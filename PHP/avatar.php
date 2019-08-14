@@ -7,15 +7,15 @@ require 'funcoes.php';
 $nome = $_SESSION['nome'];
 
 if(isset($_POST['enviar-avatar'])){
-	$background = $_POST['background'];
+	$avatar = $_POST['avatar'];
+
 	$sql = "UPDATE users SET avatar = '$avatar' WHERE (nome LIKE '$nome')";
 	try {
 		$consulta = $link->prepare($sql);
 	
 		$consulta->execute();
-		session_destroy();
 
-		header("Location:../index.php");
+		header("Location:../perfil.php");
 	}
 	catch(PDOException $ex){
 		echo($ex->getMessage());
