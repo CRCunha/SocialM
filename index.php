@@ -86,7 +86,7 @@
                     </div>
                     <div class="btn-download">
                         <div class="container">
-                            <a href="https://www.mediafire.com/file/h74ed8xptbsb6tu/_D_Mountain_9398843.apk/file" target="_blank">Downlaod .apk</a>
+                            <a href="" target="_blank">Downlaod .apk</a>
                         </div>
                     </div>
                 </div>
