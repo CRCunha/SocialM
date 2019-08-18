@@ -91,6 +91,6 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
     color: #7e7e7e;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     font-size: 11pt;
 }

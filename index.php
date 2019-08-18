@@ -53,7 +53,7 @@
     }
 
 ?>
-
+        <?php $_SESSION['foto'] = $avatar; ?>
     <body>
         <header>
             <nav>
@@ -171,7 +171,7 @@
             <?php else: ?>
             <div class="modal-perfil">
                 <div class="container">
-                    <a style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;" href="perfil.php">
+                    <a style="background-image: url('<?=$_SESSION['foto']?>'); background-position: center; background-size: cover;" href="perfil.php">
 
                     </a>
                     <div class="new-post">

@@ -1,14 +1,14 @@
 <?php
     require "funcoes.php";
     require "conecta.php"; 
-     // resgata variáveis do formulário
+
     $email = isset($_POST['email']) ? $_POST['email'] : '';
     $senha = isset($_POST['senha']) ? $_POST['senha'] : '';
     if (empty($email) || empty($senha)){
     	echo "Informe email e senha";
     	exit;
     }
-     // cria o hash da senha
+
     $senhaHash = make_hash($senha);
     $query = "SELECT id, nome FROM users WHERE email = :email AND senha = :senha";
     $stmt = $link->prepare($query);
@@ -20,7 +20,7 @@
         header('Location: ../index.php');
         exit;
     }
-     // pega o primeiro usuário
+
     $usuario = $usuario[0];
     session_start();
     $_SESSION['logged_in'] = true;

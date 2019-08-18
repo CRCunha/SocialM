@@ -15,9 +15,9 @@ if(isset($_POST['enviar-mensagem'])){
 		$consulta = $link->prepare($sql);
 	
 		$consulta->execute();
-		// echo ("Incluido com sucesso!");
+
 		header("Location:../chat.php");
-		// echo($nome);
+
 	}
 	catch(PDOException $ex){
 		echo($ex->getMessage());
