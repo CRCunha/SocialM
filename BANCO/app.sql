@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 14/08/2019 às 17:38
--- Versão do servidor: 10.3.15-MariaDB
--- Versão do PHP: 7.3.6
+-- Tempo de geração: 19-Ago-2019 às 00:49
+-- Versão do servidor: 10.4.6-MariaDB
+-- versão do PHP: 7.1.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `mensagens`
+-- Estrutura da tabela `mensagens`
 --
 
 CREATE TABLE `mensagens` (
@@ -36,16 +36,17 @@ CREATE TABLE `mensagens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Despejando dados para a tabela `mensagens`
+-- Extraindo dados da tabela `mensagens`
 --
 
 INSERT INTO `mensagens` (`mensagem`, `nome`, `dataMsg`, `avatar`) VALUES
-('Teste', 'Teste', '2019-08-14 09:46:14', '');
+('Teste', 'Teste', '2019-08-14 09:46:14', ''),
+('Teste', 'Cristian', '2019-08-18 18:57:39', '');
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `posts`
+-- Estrutura da tabela `posts`
 --
 
 CREATE TABLE `posts` (
@@ -53,13 +54,21 @@ CREATE TABLE `posts` (
   `info` varchar(255) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `avatar` varchar(2000) NOT NULL,
-  `imagem` varchar(2000) NOT NULL
+  `imagem` varchar(2000) NOT NULL,
+  `id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `posts`
+--
+
+INSERT INTO `posts` (`titulo`, `info`, `nome`, `avatar`, `imagem`, `id`) VALUES
+('1Ã‚Âº Post', 'Este ÃƒÂ© o primeiro post do D-M', 'Teste', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDtcZZoolUHT2_OoEKXqAn006-fGBvWEenEpwOaNViaqVoH1LO', 'https://i.imgur.com/idDIw42.png', 31);
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `users`
+-- Estrutura da tabela `users`
 --
 
 CREATE TABLE `users` (
@@ -72,7 +81,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Despejando dados para a tabela `users`
+-- Extraindo dados da tabela `users`
 --
 
 INSERT INTO `users` (`nome`, `email`, `senha`, `id`, `background`, `avatar`) VALUES
@@ -82,18 +91,30 @@ INSERT INTO `users` (`nome`, `email`, `senha`, `id`, `background`, `avatar`) VAL
 ('Teste', 'teste@teste.com', '6ba19813d8fe1145922b11ba580e477f6ea0dfb7', 11, 'https://image.freepik.com/vetores-gratis/modelo-de-plano-de-fundo-branco-infografico-hexagonal_1017-19276.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSDtcZZoolUHT2_OoEKXqAn006-fGBvWEenEpwOaNViaqVoH1LO');
 
 --
--- Índices de tabelas apagadas
+-- Índices para tabelas despejadas
 --
 
 --
--- Índices de tabela `users`
+-- Índices para tabela `posts`
+--
+ALTER TABLE `posts`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT de tabelas apagadas
+-- AUTO_INCREMENT de tabelas despejadas
 --
+
+--
+-- AUTO_INCREMENT de tabela `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
 -- AUTO_INCREMENT de tabela `users`
