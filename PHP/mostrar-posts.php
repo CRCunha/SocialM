@@ -1,6 +1,8 @@
 <?php
 include("conecta.php");
-$sql = "select * from posts order by id DESC";
+$dataH = date('Y/m/d');
+	
+$sql = "SELECT * FROM posts WHERE dataPost >= '$dataH'";
 	try {
 		$consulta = $link->prepare($sql);
 		$consulta->execute();

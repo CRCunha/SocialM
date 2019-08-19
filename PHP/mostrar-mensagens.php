@@ -1,6 +1,8 @@
 <?php
 include("conecta.php");
-$sql = "select * from mensagens order by dataMsg DESC";
+$dataH = date('Y/m/d');
+
+$sql = "SELECT * FROM mensagens WHERE dataMsg >= '$dataH'";
 	try {
 		$consulta = $link->prepare($sql);
 		$consulta->execute();
