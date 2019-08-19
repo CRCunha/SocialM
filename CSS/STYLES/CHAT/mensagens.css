@@ -63,6 +63,8 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
     font-size: 10pt;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 .data {

@@ -11,7 +11,7 @@ $sql = "SELECT * FROM posts WHERE nome LIKE '$nome' ORDER BY dataPost DESC";
 			$info = utf8_decode($registro['info']);
 			$avatar = $registro['avatar'];
 			$imagem = $registro['imagem'];
-			include("postEstrutura.php");
+			include("postEstrutura-perfil.php");
 		}
 	}
 	catch(PDOException $ex){
