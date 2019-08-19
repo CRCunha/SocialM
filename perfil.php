@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="CSS/STYLES/PERFIL/HEADER/header.css">
     <link rel="stylesheet" href="CSS/STYLES/PERFIL/HEADER/card-infos.css">
     <link rel="stylesheet" href="CSS/STYLES/PERFIL/HEADER/card-background.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/post.css">
     <script type="text/javascript" src="JS/functions.js">
     </script>
     <!--FONTES-->
@@ -114,6 +115,10 @@
                 </form>
             </div>
         </div>
+
+        <?php
+            include("PHP/mostrar-posts-perfil.php");
+        ?>
     </body>
 
 </html>

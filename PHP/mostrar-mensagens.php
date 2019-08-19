@@ -13,14 +13,14 @@ $sql = "select * from mensagens order by dataMsg DESC";
             <div class='quadro'>
                 <div class='linha-chat' id='linha-chat'></div>
 				<div class='info '>
+					<div class='avatar' style='background-image: url($avatar); background-position: center; background-size: cover;'></div>
 					<div class='nome'>$nome:</div>
 					<div class='mensagem'>$mensagem</div></div>
 			</div>
 			<div class='data'>
 				<div class='container' id='data-container'>$data</div>
 			</div>
-		";?>
-		<?php
+		";
 		}
 	}
 	catch(PDOException $ex){
