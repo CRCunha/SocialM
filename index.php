@@ -175,11 +175,12 @@
 
                     </a>
                     <div class="new-post">
-                        <div class="title">New Post</div>
+                        <div class="new-post-header">New Post</div>
+                        <div class="new-post-background"></div>
                         <form action="PHP/posts.php" method="post">
+                            <input type="text" name="imagem" id="imagem" placeholder="Imagem">
                             <input type="text" name="titulo" id="titulo" placeholder="Titulo">
                             <input type="text" name="info" id="info" placeholder="Descrição">
-                            <input type="text" name="imagem" id="imagem" placeholder="Imagem">
                             <input type="submit"name="enviar-post" value="Enviar">
                         </form>
                     </div>

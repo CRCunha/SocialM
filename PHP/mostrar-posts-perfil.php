@@ -1,7 +1,7 @@
 <?php
 include("conecta.php");
 $nome = $_SESSION['nome'];
-$sql = "SELECT * FROM posts WHERE nome LIKE '$nome'";
+$sql = "SELECT * FROM posts WHERE nome LIKE '$nome' ORDER BY dataPost DESC";
 	try {
 		$consulta = $link->prepare($sql);
 		$consulta->execute();

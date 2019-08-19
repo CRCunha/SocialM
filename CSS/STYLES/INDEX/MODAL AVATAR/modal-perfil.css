@@ -44,39 +44,72 @@
     margin-bottom: 50px;
 }
 
-.modalAvatar .modal-perfil .container .new-post .title {
+.modalAvatar .modal-perfil .container .new-post .new-post-header {
+    margin-bottom: 50px;
     width: 100%;
     height: 70px;
+    margin-top: -53px;
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
-    font-size: 16pt;
     color: #7e7e7e;
+}
+
+.modalAvatar .modal-perfil .container .new-post .new-post-background {
+    width: 100%;
+    height: 45%;
+    margin-top: -150px;
+    background-color: #ccc;
 }
 
 .modalAvatar .modal-perfil .container .new-post form {
-    width: 85%;
+    width: 100%;
     display: var(--flex);
-    justify-content: var(--space-around);
+    justify-content: var(--flex-start);
     align-items: var(--center);
     flex-wrap: var(--wrap);
-    height: 280px;
+    height: 30%;
+    margin-top: -150px;
 }
 
 .modalAvatar .modal-perfil .container .new-post form input[type="text"] {
-    width: 90%;
     border: none;
-    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.58);
     padding: 10px;
     color: #7e7e7e;
-    text-align: center;
+    text-align: start;
 }
 
 .modalAvatar .modal-perfil .container .new-post form input[type="submit"] {
     border: none;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.08);
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(243, 243, 243);
     color: #7e7e7e;
-    border-radius: 8px;
+    border-radius: 5px;
     padding: 15px 50px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#imagem {
+    margin-left: 20px;
+    width: 80%;
+    margin-top: -70px;
+    margin-bottom: 90px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+#titulo {
+    width: 55%;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+}
+
+#info {
+    width: 75%;
+    margin-left: 20px;
+    box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
 }
