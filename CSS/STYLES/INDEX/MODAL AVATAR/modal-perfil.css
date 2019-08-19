@@ -59,7 +59,7 @@
     width: 100%;
     height: 45%;
     margin-top: -150px;
-    background-color: #ccc;
+    background-image: linear-gradient(to right bottom, #cdcd85, #bad582, #9ede87, #75e694, #12eeab);
 }
 
 .modalAvatar .modal-perfil .container .new-post form {
@@ -87,7 +87,7 @@
     border-radius: 5px;
     padding: 15px 50px;
     margin-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 
 #imagem {

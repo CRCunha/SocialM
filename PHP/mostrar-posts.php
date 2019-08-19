@@ -2,7 +2,7 @@
 include("conecta.php");
 $dataH = date('Y/m/d');
 
-$sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' ORDER BY dataPost DESC";
+$sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' ORDER BY id DESC";
 	try {
 		$consulta = $link->prepare($sql);
 		$consulta->execute();
