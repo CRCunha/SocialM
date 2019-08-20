@@ -3,7 +3,14 @@
 			<div class='post-header'>
 				<div class='container'>
 					<div class='avatar' style='background-image: url("<?=$avatar?>"); background-position: center; background-size: cover;'></div>
-					<div class='nome' id='nomePerf'><img src="../IMG/PERFIL/excluir.png"></div>
+					<div class='nome' id='nomePerf'>
+						<form action="PHP/excluir-posts-perfil.php" method="post">
+							<input type="hidden" name="excluirId" id="excluirId" value="<?=$id?>">
+							<div class="excluir">
+								<input type="submit" value="" name="excluirPost">
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 			<div class='post-background' style='background-image: url("<?=$imagem?>"); background-position: center; background-size: cover;'></div>
