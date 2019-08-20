@@ -113,15 +113,12 @@
     z-index: -1;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+#btn-excluir {
     background-color: transparent;
     border: none;
     width: 100%;
     height: 100%;
-    padding: 8px 18px;
+    padding: 6px 16px;
     background-image: url("../../../../IMG/PERFIL/excluir.png");
     background-position: center;
     background-size: cover;

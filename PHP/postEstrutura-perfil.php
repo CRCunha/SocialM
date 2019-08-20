@@ -7,7 +7,7 @@
 						<form action="PHP/excluir-posts-perfil.php" method="post">
 							<input type="hidden" name="excluirId" id="excluirId" value="<?=$id?>">
 							<div class="excluir">
-								<input type="submit" value="" name="excluirPost">
+								<input type="submit" value="" id="btn-excluir" name="excluirPost">
 							</div>
 						</form>
 					</div>
