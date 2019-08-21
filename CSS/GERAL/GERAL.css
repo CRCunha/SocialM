@@ -26,6 +26,38 @@ body {
 }
 
 
-/* QUERY EXEMPLO */
+/* ANIMAÇÔES */
 
-@media only screen and (max-width: 800px) {}
+
+/* animation: spin 5s linear infinite; */
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+/* animation: pulse .8s infinite ease-in; */
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+    50% {
+        transform: scale(1.008);
+        opacity: 1
+    }
+    50% {
+        transform: scale(1.012);
+        opacity: 1
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1
+    }
+}
