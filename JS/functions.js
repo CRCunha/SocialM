@@ -84,6 +84,8 @@ function modalAvatar() {
     elementoGrupo.style.filter = "blur(20px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(20px)";
+    var elementoVaquinha = document.querySelector(".vaquinha");
+    elementoVaquinha.style.filter = "blur(20px)";
 }
 
 function modalAvatarClose() {
@@ -95,6 +97,8 @@ function modalAvatarClose() {
     elementoGrupo.style.filter = "blur(0px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(0px)";
+    var elementoVaquinha = document.querySelector(".vaquinha");
+    elementoVaquinha.style.filter = "blur(0px)";
 
     var elementoLog = document.querySelector(".container-form-log");
     var elementoReg = document.querySelector(".container-form-reg");
