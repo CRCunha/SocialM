@@ -33,10 +33,11 @@
     session_start();
     require "PHP/funcoes.php";
     require "PHP/conecta.php";
+    $dataH = date('Y/m/d');
     if (isLoggedIn()){
         $nome = $_SESSION['nome'];
         $sql = "SELECT avatar FROM users WHERE nome LIKE '$nome'";
-    
+        $sqlMoney = "SELECT valro FROM vaquinha WHERE 'data' = '$dataH'";
         try {
             $consulta = $link->prepare($sql);
             $consulta->execute();
@@ -51,7 +52,6 @@
     else{
         $avatar = "https://i.imgur.com/E9Gk0e2.png";
     }
-
 ?>
         <?php $_SESSION['foto'] = $avatar; ?>
     <body>
@@ -98,6 +98,13 @@
                 <div class="btn-container">
                     <a href="chat.php">D-Chat <img src="IMG/MAIN/chat.png" alt="chat"></a>
                 </div>
+            </div>
+        </div>
+        <div class="vaquinha">
+            <div class="icon">
+                <a href="">
+                    <img src="IMG/MAIN/coin.png">
+                </a>
             </div>
         </div>
         <!-- POSTS -->

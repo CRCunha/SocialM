@@ -61,7 +61,6 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
     margin-left: 10px;
-    animation: pulse 1s infinite ease-in;
 }
 
 .main-info .card .btn-download .container a {
