@@ -35,6 +35,7 @@
     require "PHP/funcoes.php";
     require "PHP/conecta.php";
     $dataH = date('Y/m/d');
+    $hora = date('H:i:s');
     if (isLoggedIn()){
         $nome = $_SESSION['nome'];
         $sql = "SELECT avatar FROM users WHERE nome LIKE '$nome'";
@@ -103,6 +104,13 @@
             </div>
         </div>
         <div class="vaquinha">
+            <?php if ($hora < 12): ?>
+            <div style="margin-right: -50px;margin-top:-120px;" class="icon" id="icon2" onclick="openModalDoacoes()">
+                <img src="IMG/MAIN/coin2.png">
+            </div>
+            <?php else: ?>
+                    
+            <?php endif; ?>
             <div class="icon" onclick="openModalVaquinha()">
                 <img src="IMG/MAIN/coin.png">
             </div>
@@ -211,6 +219,16 @@
                 </form>
                 <div class="btnclose">
                     <div class="close" onclick="closeModalVaquinha()"></div>
+                </div>
+            </div>
+        </div>
+        <div class="doacoesModal">
+            <div class="modal">
+                <div class="title">DOADORES</div>
+                <div class="content">
+                <?php 
+                    include("PHP/mostrar-doadores.php");
+                ?>
                 </div>
             </div>
         </div>

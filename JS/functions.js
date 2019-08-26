@@ -200,4 +200,18 @@ function closeModalVaquinha() {
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(0px)";
 
+
+}
+
+function openModalDoacoes() {
+    var elementoModal = document.querySelector(".doacoesModal");
+    elementoModal.style.display = "flex";
+    var elementoBody = document.querySelector("header");
+    elementoBody.style.filter = "blur(20px)";
+    var elementoGrupo = document.querySelector(".grupo-container");
+    elementoGrupo.style.filter = "blur(20px)";
+    var elementoPosts = document.querySelector(".posts");
+    elementoPosts.style.filter = "blur(20px)";
+    var elementoVaquinha = document.querySelector(".vaquinha");
+    elementoVaquinha.style.filter = "blur(20px)";
 }
