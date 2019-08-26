@@ -171,3 +171,33 @@ function modalAv() {
         el3.style.display = 'none';
     }
 }
+
+
+function openModalVaquinha() {
+    var elementoModal = document.querySelector(".vaquinhaModal");
+    elementoModal.style.display = "flex";
+    var elementoBody = document.querySelector("header");
+    elementoBody.style.filter = "blur(20px)";
+    var elementoGrupo = document.querySelector(".grupo-container");
+    elementoGrupo.style.filter = "blur(20px)";
+    var elementoPosts = document.querySelector(".posts");
+    elementoPosts.style.filter = "blur(20px)";
+    var elementoVaquinha = document.querySelector(".vaquinha");
+    elementoVaquinha.style.filter = "blur(20px)";
+
+}
+
+function closeModalVaquinha() {
+
+    var elementoModal = document.querySelector(".vaquinhaModal");
+    elementoModal.style.display = "none";
+    var elementoBody = document.querySelector("header");
+    elementoBody.style.filter = "blur(0px)";
+    var elementoGrupo = document.querySelector(".grupo-container");
+    elementoGrupo.style.filter = "blur(0px)";
+    var elementoPosts = document.querySelector(".posts");
+    elementoPosts.style.filter = "blur(0px)";
+    var elementoVaquinha = document.querySelector(".vaquinha");
+    elementoVaquinha.style.filter = "blur(0px)";
+
+}

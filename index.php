@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/log-ger.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MODAL AVATAR/modal-perfil.css">
     <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/post.css">
+    <link rel="stylesheet" href="CSS/STYLES/INDEX/MAIN/vaquinha.css">
     <script type="text/javascript" src="JS/functions.js">
     </script>
     <!--FONTES-->
@@ -53,7 +54,8 @@
         $avatar = "https://i.imgur.com/E9Gk0e2.png";
     }
 ?>
-        <?php $_SESSION['foto'] = $avatar; ?>
+    <?php $_SESSION['foto'] = $avatar; ?>
+
     <body>
         <header>
             <nav>
@@ -101,10 +103,8 @@
             </div>
         </div>
         <div class="vaquinha">
-            <div class="icon">
-                <a href="">
-                    <img src="IMG/MAIN/coin.png">
-                </a>
+            <div class="icon" onclick="openModalVaquinha()">
+                <img src="IMG/MAIN/coin.png">
             </div>
         </div>
         <!-- POSTS -->
@@ -188,12 +188,34 @@
                             <input type="text" name="imagem" id="imagem" placeholder="Imagem">
                             <input type="text" name="titulo" id="titulo" placeholder="Titulo">
                             <input type="text" name="info" id="info" placeholder="Descrição">
-                            <input type="submit"name="enviar-post" value="Enviar">
+                            <input type="submit" name="enviar-post" value="Enviar">
                         </form>
                     </div>
                 </div>
             </div>
             <?php endif; ?>
+        </div>
+        <?php if (isLoggedIn()): ?>
+        <div class="vaquinhaModal">
+            <div class="container">
+                <div class="header">
+                    <div class="linha"></div>
+                    <div class="avatar-container">
+                        <div class="avatar" style="background-image: url('<?=$_SESSION['foto']?>'); background-position: center; background-size: cover;"></div>
+                    </div>
+                    <div class="text">VAQUINHA PARA A COCA</div>
+                </div>
+                <form action="PHP/vaquinha.php" method="post">
+                    <input type="text" name="valor" id="valor" placeholder="Ex: 2.25" pattern="[0-9]+([,\.][0-9]+)?"> 
+                    <input type="submit" value="Enviar Valor" name="enviarValor">
+                </form>
+                <div class="btnclose">
+                    <div class="close" onclick="closeModalVaquinha()"></div>
+                </div>
+            </div>
+        </div>
+        <?php else: ?>
+        <?php endif; ?>
     </body>
 
     <script>
