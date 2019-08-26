@@ -230,3 +230,23 @@
     border-radius: 8px;
     box-shadow: 0 3px 6px 3px rgba(9, 9, 16, 0.08);
 }
+
+.doacoesModal .closeBtn {
+    width: 82%;
+    height: 50px;
+    position: fixed;
+    justify-content: var(--flex-end);
+    align-items: var(--center);
+    display: var(--flex);
+}
+
+.doacoesModal .closeBtn .btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-image: url("../../../../IMG/MODAL\ AVATAR/close2.png");
+    background-position: center;
+    background-size: cover;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 3px rgba(9, 9, 16, 0.08);
+}

@@ -18,7 +18,7 @@ $sql = "SELECT * FROM doacoes WHERE dataDoacao >= '$dataH'";
 			");
 		}
 		echo("
-			<div class='quantia'>QUANTIAr : $soma R$</div>
+			<div class='quantia'>QUANTIA : $soma R$</div>
 		");
 	}
 	catch(PDOException $ex){

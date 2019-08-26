@@ -230,6 +230,9 @@
                     include("PHP/mostrar-doadores.php");
                 ?>
                 </div>
+                <div class="closeBtn">
+                    <div class="btn" onclick="closeModalDoacoes()"></div>
+                </div>
             </div>
         </div>
         <?php else: ?>
