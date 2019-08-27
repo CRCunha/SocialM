@@ -176,12 +176,14 @@ function modalAv() {
 function openModalVaquinha() {
     var elementoModal = document.querySelector(".vaquinhaModal");
     elementoModal.style.display = "flex";
-    var elementoBody = document.querySelector("header");
-    elementoBody.style.filter = "blur(20px)";
+    var elementoHeader = document.querySelector("header");
+    elementoHeader.style.filter = "blur(20px)";
     var elementoGrupo = document.querySelector(".grupo-container");
     elementoGrupo.style.filter = "blur(20px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(20px)";
+    var elementoPost = document.querySelector(".post");
+    elementoPost.style.filter = "blur(20px)";
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(20px)";
 
@@ -191,15 +193,17 @@ function closeModalVaquinha() {
 
     var elementoModal = document.querySelector(".vaquinhaModal");
     elementoModal.style.display = "none";
-    var elementoBody = document.querySelector("header");
-    elementoBody.style.filter = "blur(0px)";
+    var elementoHeader = document.querySelector("header");
+    elementoHeader.style.filter = "blur(0px)";
     var elementoGrupo = document.querySelector(".grupo-container");
     elementoGrupo.style.filter = "blur(0px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(0px)";
+    var elementoPost = document.querySelector(".post");
+    elementoPost.style.filter = "blur(0px)";
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(0px)";
-
+    var elemento
 
 }
 
@@ -212,6 +216,8 @@ function openModalDoacoes() {
     elementoGrupo.style.filter = "blur(20px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(20px)";
+    var elementoPost = document.querySelector(".post");
+    elementoPost.style.filter = "blur(20px)";
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(20px)";
 }
@@ -225,6 +231,8 @@ function closeModalDoacoes() {
     elementoGrupo.style.filter = "blur(0px)";
     var elementoPosts = document.querySelector(".posts");
     elementoPosts.style.filter = "blur(0px)";
+    var elementoPost = document.querySelector(".post");
+    elementoPost.style.filter = "blur(0px)";
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(0px)";
 }

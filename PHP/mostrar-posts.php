@@ -2,7 +2,7 @@
 include("conecta.php");
 $dataH = date('Y/m/d');
 
-$sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' OR prioridade != 'baixa' ORDER BY id DESC";
+$sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' OR prioridade != 'baixa' ORDER BY prioridade, id DESC";
 	try {
 		$consulta = $link->prepare($sql);
 		$consulta->execute();
@@ -12,6 +12,7 @@ $sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' OR prioridade != 'baixa' 
 			$info = utf8_decode($registro['info']);
 			$avatar = $registro['avatar'];
 			$imagem = $registro['imagem'];
+			$prioridade = $registro['prioridade'];
 			include("postEstrutura.php");
 		}
 	}

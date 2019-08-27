@@ -103,18 +103,18 @@
                 </div>
             </div>
         </div>
+        <?php if ($hora < 12): ?>
         <div class="vaquinha">
-            <?php if ($hora < 12): ?>
             <div style="margin-right: -50px;margin-top:-120px;" class="icon" id="icon2" onclick="openModalDoacoes()">
                 <img src="IMG/MAIN/coin2.png">
             </div>
-            <?php else: ?>
-                    
-            <?php endif; ?>
             <div class="icon" onclick="openModalVaquinha()">
                 <img src="IMG/MAIN/coin.png">
             </div>
         </div>
+        <?php else: ?>
+                    
+        <?php endif; ?>
         <!-- POSTS -->
         <?php 
         include("PHP/mostrar-posts.php");
