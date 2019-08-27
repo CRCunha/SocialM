@@ -22,8 +22,15 @@ if(isset($_POST['enviar-post'])){
 	$info =  utf8_encode($_POST['info']);
 	$nome = utf8_encode($_SESSION['nome']);
 	$imagem = utf8_encode($_POST['imagem']);
+
+	if($nome == 'PROPAGANDA'){
+		$prioridade = 'alta';
+	}
+	else{
+		$prioridade = 'baixa';
+	}
 	
-    $sql = "INSERT INTO posts (titulo, info, nome, avatar, imagem) VALUES ('$titulo', '$info', '$nome', '$avatar', '$imagem')";
+    $sql = "INSERT INTO posts (titulo, info, nome, avatar, imagem, prioridade) VALUES ('$titulo', '$info', '$nome', '$avatar', '$imagem', '$prioridade')";
     
 	try {
 		$consulta = $link->prepare($sql);

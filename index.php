@@ -39,7 +39,7 @@
     if (isLoggedIn()){
         $nome = $_SESSION['nome'];
         $sql = "SELECT avatar FROM users WHERE nome LIKE '$nome'";
-        $sqlMoney = "SELECT valro FROM vaquinha WHERE 'data' = '$dataH'";
+        $sqlMoney = "SELECT valor FROM vaquinha WHERE 'data' = '$dataH'";
         try {
             $consulta = $link->prepare($sql);
             $consulta->execute();
@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <?php if ($hora < 12): ?>
+        <?php if ($hora > 12): ?>
         <div class="vaquinha">
             <div style="margin-right: -50px;margin-top:-120px;" class="icon" id="icon2" onclick="openModalDoacoes()">
                 <img src="IMG/MAIN/coin2.png">
