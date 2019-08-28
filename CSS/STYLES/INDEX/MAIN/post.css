@@ -33,7 +33,7 @@
     height: 50px;
     border-radius: 8px;
     box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.08);
-    animation: float 4s ease-in-out infinite;
+    animation: float 3.5s ease-in-out infinite;
 }
 
 .posts .post .post-header .container .nome {
@@ -92,7 +92,7 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
     color: #7e7e7e;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 11pt;
 }
 
