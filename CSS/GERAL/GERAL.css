@@ -50,3 +50,21 @@ body {
         opacity: 1
     }
 }
+
+
+/* animation: float 6s ease-in-out infinite; */
+
+@keyframes float {
+    0% {
+        /* box-shadow: 0 20px 30px -16px rgba(9, 9, 16, .2); */
+        transform: translatey(0px);
+    }
+    50% {
+        /* box-shadow: 0 10px 20px -26px rgba(9, 9, 16, .1); */
+        transform: translatey(-3px);
+    }
+    100% {
+        /* box-shadow: 0 20px 30px -16px rgba(9, 9, 16, .2); */
+        transform: translatey(0px);
+    }
+}

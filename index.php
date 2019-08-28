@@ -103,7 +103,7 @@
                 </div>
             </div>
         </div>
-        <?php if ($hora > 12): ?>
+        <?php if ($hora >= '10:30' && $hora <= '13:00'): ?>
         <div class="vaquinha">
             <div style="margin-right: -50px;margin-top:-120px;" class="icon" id="icon2" onclick="openModalDoacoes()">
                 <img src="IMG/MAIN/coin2.png">
@@ -113,7 +113,7 @@
             </div>
         </div>
         <?php else: ?>
-                    
+    
         <?php endif; ?>
         <!-- POSTS -->
         <?php 
