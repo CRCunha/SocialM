@@ -15,6 +15,21 @@
 					<div class='container'>
 						<?=$info?>
 					</div>
+					<div class='controle'>
+						<div class="img1" onclick="like()">
+							<form action="PHP/like.php" method="post">
+								<?php if (isLoggedIn()): ?>
+								<input style="display: none" type="number" name="id" id="like" value="<?=$id?>">
+								<input style="display: none" type="number" name="like" id="like" value="<?=$like?>">
+								<input type="submit" name="enviar" value="<?=$like?>" style="width: 100%; height:100%; background-color: transparent;border: none;">
+								<?php else: ?>
+								<input disabled type="none" name="enviar" value="<?=$like?>" style="width: 100%; height:100%; background-color: transparent;border: none; text-align: center;">
+								<?php endif; ?>
+								
+							</form>
+						</div>
+						<div class="img2"></div>
+					</div>
 				</div>
 			</div>
 		</div>

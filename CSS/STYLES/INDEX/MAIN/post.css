@@ -83,6 +83,7 @@
     display: var(--flex);
     justify-content: var(--center);
     align-items: var(--center);
+    flex-wrap: var(--wrap);
 }
 
 .posts .post .post-infos .description .container {
@@ -92,7 +93,7 @@
     justify-content: var(--flex-start);
     align-items: var(--center);
     color: #7e7e7e;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     font-size: 11pt;
 }
 
@@ -112,6 +113,43 @@
     padding: 10px;
     margin-left: 60px;
     z-index: -1;
+}
+
+.posts .post .post-infos .description .controle {
+    width: 85%;
+    height: 50px;
+    display: var(--flex);
+    justify-content: var(--flex-start);
+    align-items: var(--center);
+    padding-bottom: 10px;
+}
+
+.posts .post .post-infos .description .controle .img1 {
+    width: 28px;
+    height: 28px;
+    background-image: url("../../../../IMG/POSTS/nlike.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.posts .post .post-infos .description .controle .img1 form {
+    width: 100%;
+    height: 100%;
+}
+
+.posts .post .post-infos .description .controle .img1 form input {
+    font-size: 7pt;
+    color: #d1d696;
+    font-weight: bold;
+}
+
+.posts .post .post-infos .description .controle .img2 {
+    width: 28px;
+    height: 28px;
+    background-image: url("../../../../IMG/POSTS/nsend.png");
+    background-position: center;
+    background-size: cover;
+    margin-left: 20px;
 }
 
 #btn-excluir {

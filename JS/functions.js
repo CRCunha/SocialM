@@ -236,3 +236,15 @@ function closeModalDoacoes() {
     var elementoVaquinha = document.querySelector(".vaquinha");
     elementoVaquinha.style.filter = "blur(0px)";
 }
+
+// function like() {
+//     elemento = document.querySelector(".img1");
+
+//     if (elemento.style.backgroundImage == "url('../IMG/POSTS/nlike.png')" || elemento.style.backgroundImage == "") {
+//         elemento.style.backgroundImage = "url('../IMG/POSTS/like.png')";
+//     } else {
+//         elemento.style.backgroundImage = "";
+//     }
+
+//     console.log(elemento);
+// }

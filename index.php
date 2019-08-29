@@ -209,7 +209,7 @@
                 <div class="header">
                     <div class="linha"></div>
                     <div class="avatar-container">
-                        <div class="avatar" style="background-image: url('<?=$_SESSION['foto']?>'); background-position: center; background-size: cover;"></div>
+                        <div class="avatar" style="animation: float 4s ease-in-out infinite; background-image: url('<?=$_SESSION['foto']?>'); background-position: center; background-size: cover;"></div>
                     </div>
                     <div class="text">VAQUINHA PARA A COCA</div>
                 </div>
