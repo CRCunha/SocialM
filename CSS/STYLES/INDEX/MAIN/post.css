@@ -130,6 +130,7 @@
     background-image: url("../../../../IMG/POSTS/nlike.png");
     background-position: center;
     background-size: cover;
+    animation: floatIcon 4s ease-in-out infinite;
 }
 
 .posts .post .post-infos .description .controle .img1 form {
@@ -146,10 +147,23 @@
 .posts .post .post-infos .description .controle .img2 {
     width: 28px;
     height: 28px;
+    background-image: url("../../../../IMG/POSTS/nstar.png");
+    background-position: center;
+    background-size: cover;
+    margin-left: 15px;
+    margin-top: -5px;
+    animation: floatIcon 4.3s ease-in-out infinite;
+}
+
+.posts .post .post-infos .description .controle .img3 {
+    width: 27px;
+    height: 27px;
     background-image: url("../../../../IMG/POSTS/nsend.png");
     background-position: center;
     background-size: cover;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-top: -3px;
+    animation: floatIcon 4.5s ease-in-out infinite;
 }
 
 #btn-excluir {

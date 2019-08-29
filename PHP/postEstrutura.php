@@ -29,6 +29,7 @@
 							</form>
 						</div>
 						<div class="img2"></div>
+						<div class="img3"></div>
 					</div>
 				</div>
 			</div>

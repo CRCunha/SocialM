@@ -68,3 +68,18 @@ body {
         transform: translatey(0px);
     }
 }
+
+
+/* animation: floatIcon 6s ease-in-out infinite; */
+
+@keyframes floatIcon {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-2px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
