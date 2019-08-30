@@ -136,17 +136,24 @@
 .posts .post .post-infos .description .controle .img1 form {
     width: 100%;
     height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
 }
 
 .posts .post .post-infos .description .controle .img1 form input {
     font-size: 7pt;
     color: #d1d696;
     font-weight: bold;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    font-weight: bold;
 }
 
 .posts .post .post-infos .description .controle .img2 {
-    width: 28px;
-    height: 28px;
+    width: 29px;
+    height: 29px;
     background-image: url("../../../../IMG/POSTS/nstar.png");
     background-position: center;
     background-size: cover;
@@ -155,15 +162,33 @@
     animation: floatIcon 4.3s ease-in-out infinite;
 }
 
+.posts .post .post-infos .description .controle .img2 form {
+    width: 100%;
+    height: 100%;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+}
+
+.posts .post .post-infos .description .controle .img2 form input {
+    font-size: 7pt;
+    color: #d1d696;
+    font-weight: bold;
+    display: var(--flex);
+    justify-content: var(--center);
+    align-items: var(--center);
+    font-weight: bold;
+}
+
 .posts .post .post-infos .description .controle .img3 {
-    width: 27px;
-    height: 27px;
-    background-image: url("../../../../IMG/POSTS/nsend.png");
+    width: 24px;
+    height: 24px;
     background-position: center;
     background-size: cover;
     margin-left: 15px;
     margin-top: -3px;
     animation: floatIcon 4.5s ease-in-out infinite;
+    background-image: url("../../../../IMG/POSTS/baixa.png");
 }
 
 #btn-excluir {

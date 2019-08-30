@@ -23,7 +23,7 @@ if(isset($_POST['enviar-post'])){
 	$nome = utf8_encode($_SESSION['nome']);
 	$imagem = utf8_encode($_POST['imagem']);
 
-	if($nome == 'PROPAGANDA'){
+	if($nome == 'ANUNCIOS'){
 		$prioridade = 'alta';
 	}
 	else{

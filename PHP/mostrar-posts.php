@@ -15,6 +15,9 @@ $sql = "SELECT * FROM posts WHERE dataPost >= '$dataH' OR prioridade != 'baixa' 
 			$prioridade = $registro['prioridade'];
 			$id = $registro['id'];
 			$like = $registro['likeP'];
+			$star = $registro['starP'];
+			$nivel = $registro['nivel'];
+
 			include("postEstrutura.php");
 		}
 	}
