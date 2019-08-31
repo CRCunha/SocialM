@@ -31,8 +31,19 @@
 								<input disabled type="none" name="enviar" value="" style="width: 100%; height:100%; background-color: transparent;border: none; text-align: center;">
 							</form>
 						</div>
-						<div class="img2"></div>
-						<div class="img3"></div>
+						<div class="img2">
+                        <form action="PHP/star.php" method="post">
+                            <?php if (isLoggedIn()): ?>
+                            <input style="display: none" type="number" name="id" id="star" value="<?=$id?>">
+                            <input style="display: none" type="number" name="star" id="star" value="<?=$star?>">
+                            <input type="submit" name="enviar" value="" style="width: 100%; height:100%; background-color: transparent;border: none;">
+                            <?php else: ?>
+                            <input disabled type="none" name="enviar" value="<?=$star?>" style="width: 100%; height:100%; background-color: transparent;border: none; text-align: center;">
+                            <?php endif; ?>
+                        </form>
+                    </div>
+                    <div class="img3" style=" background-image: url('../../../../IMG/POSTS/baixo.png');">
+                    </div>
 					</div>
 				</div>
 			</div>

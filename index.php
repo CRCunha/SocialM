@@ -71,7 +71,6 @@
                     <div class="top"></div>
                     <?php endif; ?>
                     <div class="avatar" style="background-image: url('<?=$avatar?>'); background-position: center; background-size: cover;" onclick="modalAvatar()">
-
                     </div>
                 </div>
             </nav>
@@ -113,7 +112,6 @@
             </div>
         </div>
         <?php else: ?>
-    
         <?php endif; ?>
         <!-- POSTS -->
         <?php 
@@ -180,14 +178,12 @@
                             <input type="submit" name="register" value="Enviar">
                         </form>
                     </div>
-
                 </div>
             </div>
             <?php else: ?>
             <div class="modal-perfil">
                 <div class="container">
                     <a style="background-image: url('<?=$_SESSION['foto']?>'); background-position: center; background-size: cover;" href="perfil.php">
-
                     </a>
                     <div class="new-post">
                         <div class="new-post-header">New Post</div>
