@@ -76,7 +76,7 @@
             </nav>
             <div class="news">
                 <div class="container">
-                    <div class="title">D-Mountain</div>
+                    <div class="title">Social M</div>
                     <div class="sub">Is the beginning of an academic creation for a final project.</div>
                 </div>
             </div>
@@ -88,7 +88,7 @@
                     </div>
                     <div class="btn-download">
                         <div class="container">
-                            <a href="https://www.mediafire.com/file/s9debqvq3u056kx/_D_Mountain_9398843.apk/file" target="_blank">Downlaod .apk</a>
+                            <a href="https://www.mediafire.com/file/g4eiyw4tmhybh1h/_SocialM_9506818.apk/file" target="_blank">Downlaod .apk</a>
                         </div>
                     </div>
                 </div>
@@ -98,7 +98,7 @@
             <div class="card-grupo">
                 <div class="linha" id="linha"></div>
                 <div class="btn-container">
-                    <a href="chat.php">D-Chat <img src="IMG/MAIN/chat.png" alt="chat"></a>
+                    <a href="chat.php">SM Chat <img src="IMG/MAIN/chat.png" alt="chat"></a>
                 </div>
             </div>
         </div>
