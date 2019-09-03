@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Tempo de geração: 30-Ago-2019 às 14:58
+-- Tempo de geração: 03-Set-2019 às 11:27
 -- Versão do servidor: 10.4.6-MariaDB
 -- versão do PHP: 7.1.31
 
@@ -106,9 +106,10 @@ INSERT INTO `posts` (`titulo`, `info`, `nome`, `avatar`, `imagem`, `id`, `dataPo
 ('GitHub / Git', 'I Love This ', 'DEDSEC', 'https://steamuserimages-a.akamaihd.net/ugc/934958816105287547/2FC9488F01BC75B2D1485CE5258F4C998CB44838/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true', 'https://miro.medium.com/max/2625/1*l2nF8iuvoXq88G4Bqn0rew.jpeg', 65, '2019-08-26', 'baixa', 1, 0, 'baixo'),
 ('Post Fixo', 'Teste de post fixo', 'ANÚNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png', 75, '2019-08-27', 'baixa', 1, 0, 'baixo'),
 ('D-Chat', 'Under reformulation', 'DEDSEC', 'https://steamuserimages-a.akamaihd.net/ugc/934958816105287547/2FC9488F01BC75B2D1485CE5258F4C998CB44838/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true', 'https://engcode.net/wp-content/uploads/2018/12/Social-Media-Marketing-Services-Engcode.gif', 81, '2019-08-28', 'baixa', 2, 0, 'baixo'),
-('Like!', 'Evaluation system under construction', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://gotvantage.com/wp-content/uploads/2017/09/digital.gif.pagespeed.ce_.8PXNegYm3_.gif', 82, '2019-08-28', 'alta', 4, 2, 'baixo'),
-('Vaquinha', 'O sistema de vaquinha esta em pleno funcionamento. EstarÃƒÂ¡ disponÃƒÂ­vel entre 10:30 e 13:00 horas.', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://i.pinimg.com/originals/75/f5/a4/75f5a4bf815ae6c8f9d79da0e3655594.gif', 84, '2019-08-28', 'alta', 4, 2, 'medio'),
-('Monitoria', 'Vagas abertas para monitoria de atendimento educacional especializado', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://imarticus.org/wp-content/uploads/2019/06/cara.gif', 88, '2019-08-30', 'alta', 1, 1, 'alto');
+('Like!', 'Evaluation system under construction', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://gotvantage.com/wp-content/uploads/2017/09/digital.gif.pagespeed.ce_.8PXNegYm3_.gif', 82, '2019-08-28', 'baixa', 4, 2, 'baixo'),
+('Vaquinha', 'O sistema de vaquinha esta em pleno funcionamento. EstarÃƒÂ¡ disponÃƒÂ­vel entre 10:30 e 13:00 horas.', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://i.pinimg.com/originals/75/f5/a4/75f5a4bf815ae6c8f9d79da0e3655594.gif', 84, '2019-08-28', 'baixa', 4, 2, 'medio'),
+('Monitoria', 'Vagas abertas para monitoria de atendimento educacional especializado', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://imarticus.org/wp-content/uploads/2019/06/cara.gif', 88, '2019-08-30', 'alta', 1, 3, 'alto'),
+('Rebranding', 'New Name?!', 'ANUNCIOS', 'https://avatars.slack-edge.com/2015-12-17/16957173431_30721f31797e3ebc8cde_512.png', 'https://i.imgur.com/aUpty9O.png', 91, '2019-08-31', 'alta', 1, 1, 'medio');
 
 -- --------------------------------------------------------
 
@@ -172,7 +173,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT de tabela `doacoes`
 --
 ALTER TABLE `doacoes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de tabela `mensagens`
@@ -184,7 +185,7 @@ ALTER TABLE `mensagens`
 -- AUTO_INCREMENT de tabela `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT de tabela `users`
