@@ -111,6 +111,7 @@
                 <img src="IMG/MAIN/coin.png">
             </div>
         </div>
+        <audio id="my_audio" src="bg.mp3" autoplay="autoplay" loop="loop"></audio>
         <?php else: ?>
         <?php endif; ?>
         <!-- POSTS -->
@@ -238,6 +239,7 @@
     <script>
         window.onload = function() {
             pegarDia();
+            document.getElementById("my_audio").play();
         };
     </script>
 
